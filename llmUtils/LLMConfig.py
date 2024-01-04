@@ -5,7 +5,7 @@ from llama_cpp import llama_context_default_params, llama_model_default_params
 class llmConfig:
     def __init__(self) -> None:
         self.modelPath:str = None
-        self.prompt:str = ""
+        self.prompt:bytes = ""
         self.params = None
         self.contextParams = None
         self.tokenPrompt = []
